@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testng-results failed="0" passed="0" skipped="9" total="9">
+<suite duration-ms="0" name="cucumber.runtime.formatter.TestNGFormatter">
+<test duration-ms="0" name="cucumber.runtime.formatter.TestNGFormatter">
+<class name="API test">
+<test-method duration-ms="0" finished-at="2022-03-30T14:25:57Z" name="Should see LIST USERS of all existing users" started-at="2022-03-30T14:25:57Z" status="SKIP"/>
+<test-method duration-ms="0" finished-at="2022-03-30T14:25:57Z" name="Should see SINGLE USER data" started-at="2022-03-30T14:25:57Z" status="SKIP"/>
+<test-method duration-ms="0" finished-at="2022-03-30T14:25:57Z" name="Should see SINGLE USER NOT FOUND error code" started-at="2022-03-30T14:25:57Z" status="SKIP"/>
+<test-method duration-ms="0" finished-at="2022-03-30T14:25:57Z" name="CREATE a user" started-at="2022-03-30T14:25:57Z" status="SKIP"/>
+<test-method duration-ms="0" finished-at="2022-03-30T14:25:57Z" name="CREATE a user_2" started-at="2022-03-30T14:25:57Z" status="SKIP"/>
+<test-method duration-ms="0" finished-at="2022-03-30T14:25:57Z" name="LOGIN - SUCCESSFUL by a user" started-at="2022-03-30T14:25:57Z" status="SKIP"/>
+<test-method duration-ms="0" finished-at="2022-03-30T14:25:57Z" name="LOGIN - UNSUCCESSFUL by a user" started-at="2022-03-30T14:25:57Z" status="SKIP"/>
+<test-method duration-ms="0" finished-at="2022-03-30T14:25:57Z" name="Should see the list of users with DELAYED RESPONSE" started-at="2022-03-30T14:25:57Z" status="SKIP"/>
+</class>
+<class name="Checkout items in the basket">
+<test-method duration-ms="0" finished-at="2022-03-30T14:25:57Z" name="Check item total cost and tax" started-at="2022-03-30T14:25:57Z" status="SKIP"/>
+</class>
+</test>
+</suite>
+</testng-results>
