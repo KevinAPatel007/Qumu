@@ -1,6 +1,6 @@
 Feature: Checkout items in the basket
   Please use home page of https://www.saucedemo.com/
-
+@smoke
   Scenario: Check item total cost and tax
     Given I am on the home page
     When I login in with the following details
@@ -24,5 +24,7 @@ Feature: Checkout items in the basket
     When I click on the CONTINUE button
     Then Item total will be equal to the total of items on the list
     And a Tax rate of 8 % is applied to the total
+  Then I would confirm my order
+   Then I will validate my order
 
 

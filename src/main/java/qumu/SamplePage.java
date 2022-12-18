@@ -77,6 +77,20 @@ public class SamplePage extends BasePage {
     @FindBy(className="summary_tax_label")
     private WebElement itemTax;
 
+    @FindBy(id ="finish")
+    private WebElement FinalConfirmation;
+
+    @FindBy(xpath = "//*[@id=\"checkout_complete_container\"]/h2")
+    private WebElement Validation;
+
+    public void FinalconfirmaitonButton(){
+        FinalConfirmation.click();
+    }
+
+    public String getValidation(){
+      return Validation.getText();
+    }
+
     public SamplePage() {
         PageFactory.initElements(driver, this);
     }

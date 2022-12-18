@@ -380,29 +380,4 @@ formatter.match({});
 formatter.result({
   "status": "undefined"
 });
-formatter.uri("src/test/UI-Test.feature");
-formatter.feature({
-  "line": 1,
-  "name": "Checkout items in the basket",
-  "description": "Please use home page of https://www.saucedemo.com/",
-  "id": "checkout-items-in-the-basket",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "line": 4,
-  "name": "Check item total cost and tax",
-  "description": "",
-  "id": "checkout-items-in-the-basket;check-item-total-cost-and-tax",
-  "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 5,
-  "name": "I am on the home page",
-  "keyword": "Given "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
 });

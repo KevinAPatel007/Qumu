@@ -29,7 +29,6 @@ public class Hook extends BasePage {
         driver.manage().timeouts().setScriptTimeout(WAIT_SEC, TimeUnit.SECONDS);
         new iniClass();
     }
-
     /**
      * Executed after each UI tagged scenario
      */

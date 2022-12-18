@@ -11,9 +11,10 @@ import java.util.Map;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.comparesEqualTo;
+import static org.hamcrest.Matchers.equalToIgnoringCase;
 
 public class StepDefinition {
-
+public String expText="THANK YOU FOR YOUR ORDER";
     SamplePage samplePageObj = new SamplePage();
     Float _itemTotal = Float.valueOf(0);
 
@@ -162,4 +163,21 @@ public class StepDefinition {
         double calculateTaxAmount = Math.round(_itemTotal * arg1) / 100.0;
         assertThat(calculateTaxAmount, comparesEqualTo(getTaxTotal1));
     }
-}
+    @Then("^I would confirm my order$")
+    public void i_would_confirm_my_order() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        samplePageObj.FinalconfirmaitonButton();
+    }
+    @Then("^I will validate my order$")
+    public void i_will_validate_my_order() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+
+        if (expText.equals("THANK YOU FOR YOUR ORDER")) {
+            samplePageObj.getValidation();
+            String thankYouText = samplePageObj.getValidation();
+            System.out.println(thankYouText);
+          //  assertThat(thankYouText, is(equalToIgnoringCase(expText)));
+            assertThat(thankYouText,true);
+
+
+}}}

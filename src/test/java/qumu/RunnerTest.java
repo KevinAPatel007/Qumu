@@ -9,9 +9,12 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 @CucumberOptions(
-        features = ".",
-        glue = {"AutomationTest.qumu"},
-        tags = {},
+     //   features = "",
+        glue = {"src/test/java/qumu/StepDefinition.java"},
+      //  tags = "@smoke",
+       features = "src/test/API-Test.feature"
+         ,
+
         format = {
                 "pretty",
                 "html:test-output/cucumber-reports/cucumber-pretty",
